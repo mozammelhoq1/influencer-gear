@@ -10,14 +10,12 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
+
 }
 
 
 /* common css  */
 
-.star-icon{
-    color: gold;
-}
 .container{
     margin: 0 auto;
     padding:50px 50px;
@@ -42,16 +40,21 @@ body{
     top: 5px;
     box-shadow: 0 2px 0 #a5075e;
 }
+.star-icon{
+    color: gold;
+}
 .section-title{
     text-align: center;
 }
 .section-title h2{
     font-size: 40px;
     display: inline-block;
-    text-transform: uppercase;
     border-bottom: 5px solid #E02C6D;
-    margin: 50px 0;
+    margin: 70px 0;
 
+}
+.highlight{
+    color: #E02C6D;
 }
 nav{
     display: flex;
@@ -123,7 +126,15 @@ nav{
 .card img{
     width: 100%;
 }
-
+.see-more a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+.see-more{
+    margin-top: 20px;
+    text-align: end;
+    color: #E02C6D;
+}
 
 
 
@@ -154,6 +165,23 @@ nav{
     border: 1px solid #E02C6D;
 }
 
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    color: white;
+    background-color: black;
+}
+footer i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    font-size: 20px;
+    margin: 10px;
+}
 /* responsive css */
 
 @media only screen and (max-width: 688px){
@@ -235,14 +263,14 @@ nav{
         align-items: center;
         background-color: #fff;
         padding: 20px 0;
-        transform: translateX(770px);
+        transform: translateY(-330px);
         transition: .7s ease-in-out;
     }
     .navigation li a{
         color: #121212;
     }
     #nav-toggler:checked ~ .navigation{
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
     .feature{
         grid-template-columns: 1fr 1fr;
