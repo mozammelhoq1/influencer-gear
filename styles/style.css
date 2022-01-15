@@ -49,7 +49,7 @@ body{
     font-size: 40px;
     display: inline-block;
     text-transform: uppercase;
-    border-bottom: 5px solid #FF008E;
+    border-bottom: 5px solid #E02C6D;
     margin: 50px 0;
 
 }
@@ -124,18 +124,8 @@ nav{
     width: 100%;
 }
 
-.card h3{
-    color: #FF008E;
-    font-size: 25px;
-}
-.card p{
-    margin: 10px 0 ;
-    line-height: 1.5;
-}
-.card a{
-    text-decoration: none;
-    color: #FF008E;
-}
+
+
 
 
 /* contact part css */
@@ -161,7 +151,7 @@ nav{
     font-size: 18px;
     font-family: inherit;
     outline: 0;
-    border: 1px solid #FF008E;
+    border: 1px solid #E02C6D;
 }
 
 /* responsive css */
