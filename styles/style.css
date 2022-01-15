@@ -10,7 +10,7 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
-
+background-color: rgb(233, 232, 232);
 }
 
 
@@ -102,9 +102,15 @@ nav{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 .banner-right img{
     width: 100%;
+}
+.banner-right:hover img{
+    transform: scale(1.2) skew(-20deg);
+    transition: transform 2s ease-in-out;
+    overflow-x: hidden;
 }
 
 
