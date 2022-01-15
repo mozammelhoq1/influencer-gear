@@ -1,5 +1,8 @@
-
+/* google font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* for full website  */
 *{
     margin: 0;
     padding: 0;
@@ -10,17 +13,16 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
-background-color: rgb(233, 232, 232);
 }
 
 
-/* common css  */
+/* common  */
 
 .container{
     margin: 0 auto;
     padding:50px 50px;
 }
-.primary-button{
+.button{
     width: 196px;
     height: 44px;
     outline: 0;
@@ -36,7 +38,7 @@ background-color: rgb(233, 232, 232);
     position: relative;
     top: 0;
 }
-.primary-button:active{
+.button:active{
     top: 5px;
     box-shadow: 0 2px 0 #a5075e;
 }
@@ -56,6 +58,9 @@ background-color: rgb(233, 232, 232);
 .highlight{
     color: #E02C6D;
 }
+
+/* nav-bar */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -75,9 +80,11 @@ nav{
     font-weight: 600;
     padding: 15px 10px;
 }
-.nav-toggler-icon{
+.nav-icon{
     display: none;
 }
+
+/* banner  */
 .banner{
     min-height: 500px;
     display: grid;
@@ -114,9 +121,9 @@ nav{
 }
 
 
-/* Feature part css */
+/* populer collection */
 
-.feature{
+.collection{
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -145,7 +152,7 @@ nav{
 
 
 
-/* contact part css */
+/* contact  */
 
 .contact{
     display: grid;
@@ -161,7 +168,7 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-.text-field{
+.input-field{
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -171,8 +178,7 @@ nav{
     border: 1px solid #E02C6D;
 }
 
-
-
+/* footer  */
 footer{
     display: flex;
     flex-direction: column;
@@ -188,7 +194,7 @@ footer i{
     font-size: 20px;
     margin: 10px;
 }
-/* responsive css */
+/* responsive for mobile */
 
 @media only screen and (max-width: 688px){
     .container{
@@ -199,23 +205,16 @@ footer i{
         grid-template-columns: 1fr;
         height: fit-content;
     }
-    .feature,
-    .gallery,
+    .collection,
     .contact{
         grid-template-columns: 1fr;
     }
-    .photo{
-
-        text-align: center;
-    }
-    .photo img{
-        max-width: 350px;
-    }
+    
     .banner-left{
         order: 2;
         padding: 50px 0;
     }
-    .nav-toggler-icon{
+    .nav-icon{
         display: block;
     }
     .navigation{
@@ -228,7 +227,7 @@ footer i{
         background-color: #fff;
         padding: 20px 0;
         transform:
-        translateX(-330px);
+        translateX(-400px);
         transition: .7s ease-in-out;
     }
     .navigation li a{
@@ -240,7 +239,7 @@ footer i{
 }
 
 
-
+/* responsive for tablet  */
 
 @media only screen and (min-width: 689px) and (max-width: 992px){
     .container{
@@ -251,13 +250,10 @@ footer i{
         height: fit-content;
         align-content: center;
     }
-    .gallery{
-        grid-template-columns: 1fr 1fr;
-    }
     .banner-left h1{
         font-size: 35px;
     }
-    .nav-toggler-icon{
+    .nav-icon{
         display: block;
     }
     .navigation{
@@ -269,7 +265,7 @@ footer i{
         align-items: center;
         background-color: #fff;
         padding: 20px 0;
-        transform: translateY(-330px);
+        transform: translateY(-400px);
         transition: .7s ease-in-out;
     }
     .navigation li a{
@@ -278,7 +274,7 @@ footer i{
     #nav-toggler:checked ~ .navigation{
         transform: translateY(0px);
     }
-    .feature{
+    .collection{
         grid-template-columns: 1fr 1fr;
     }
 
@@ -286,4 +282,3 @@ footer i{
         align-items: center;
     }
 }
-
